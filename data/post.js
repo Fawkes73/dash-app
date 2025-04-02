@@ -1,0 +1,33 @@
+const posts = [
+  { id: 1, title: "Understanding React: A Beginner's Guide", body: "Learn the basics of React.", authorFirstName: "John", authorLastName: "Doe" },
+  { id: 2, title: "Top 10 JavaScript Frameworks in 2025", body: "Discover the most popular frameworks.", authorFirstName: "Jane", authorLastName: "Smith" },
+  { id: 3, title: "How to Prepare for a Coding Interview", body: "Ace your next technical interview.", authorFirstName: "Michael", authorLastName: "Brown" },
+  { id: 4, title: "The Future of AI in Everyday Life", body: "Explore how AI is transforming industries.", authorFirstName: "Emily", authorLastName: "Davis" },
+  { id: 5, title: "Boost Your Productivity: 10 Tools You Should Try", body: "Get more done in less time.", authorFirstName: "David", authorLastName: "Wilson" },
+  { id: 6, title: "Mastering CSS Grid: Responsive Web Design Made Easy", body: "A practical guide to building layouts.", authorFirstName: "Sophia", authorLastName: "Taylor" },
+  { id: 7, title: "Building an E-Commerce Website from Scratch", body: "Step-by-step tutorial to create a store.", authorFirstName: "Chris", authorLastName: "Johnson" },
+  { id: 8, title: "Data Science Career Path: Skills You Need in 2025", body: "Explore key skills for aspiring data scientists.", authorFirstName: "Anna", authorLastName: "Lee" },
+  { id: 9, title: "Understanding Cybersecurity: Protect Yourself Online", body: "Safeguard your personal and professional data.", authorFirstName: "James", authorLastName: "Clark" },
+  { id: 10, title: "How to Start a Blog and Make Money in 2025", body: "Create a successful blog and monetize your content.", authorFirstName: "Olivia", authorLastName: "Martinez" },
+  { id: 11, title: "The Rise of Green Technology", body: "Sustainable innovations for a better future.", authorFirstName: "Liam", authorLastName: "Garcia" },
+  { id: 12, title: "Demystifying Blockchain Technology", body: "Basics of blockchain beyond cryptocurrency.", authorFirstName: "Ethan", authorLastName: "Rodriguez" },
+  { id: 13, title: "Introduction to Cloud Computing", body: "A beginner’s guide to cloud services.", authorFirstName: "Emma", authorLastName: "Walker" },
+  { id: 14, title: "10 Ways to Improve Your Programming Skills", body: "Tips to enhance coding abilities.", authorFirstName: "Noah", authorLastName: "Perez" },
+  { id: 15, title: "The Importance of UI/UX in Modern Web Apps", body: "Good design boosts user engagement.", authorFirstName: "Charlotte", authorLastName: "Hernandez" },
+  { id: 16, title: "Exploring the Metaverse: What It Means for You", body: "Understand how the metaverse impacts interactions.", authorFirstName: "Ava", authorLastName: "Lopez" },
+  { id: 17, title: "Top Cybersecurity Certifications for 2025", body: "Certifications to advance your cybersecurity career.", authorFirstName: "Lucas", authorLastName: "Harris" },
+  { id: 18, title: "AI-Powered Marketing: Tools and Trends", body: "How AI is changing digital marketing.", authorFirstName: "Isabella", authorLastName: "Adams" },
+  { id: 19, title: "The Beginner’s Guide to Python", body: "Learn Python basics and its applications.", authorFirstName: "Mason", authorLastName: "White" },
+  { id: 20, title: "Remote Work: Tools and Tips for Success", body: "Stay productive while working remotely.", authorFirstName: "Harper", authorLastName: "Thompson" },
+  { id: 21, title: "What’s New in ES2025?", body: "Upcoming JavaScript features every developer should know.", authorFirstName: "Nathan", authorLastName: "Scott" },
+  { id: 22, title: "How to Optimize Website Performance", body: "Increase speed and SEO rankings with proven techniques.", authorFirstName: "Sophia", authorLastName: "Diaz" },
+  { id: 23, title: "Understanding REST APIs", body: "A developer’s guide to integrating APIs in web apps.", authorFirstName: "Alex", authorLastName: "Carter" },
+  { id: 24, title: "Building a Portfolio Website", body: "Showcase your skills and projects effectively.", authorFirstName: "Grace", authorLastName: "Baker" },
+  { id: 25, title: "Career Paths for Software Developers", body: "Exploring roles from front-end to cloud engineering.", authorFirstName: "Ethan", authorLastName: "Morris" },
+  { id: 26, title: "Why Automation Testing is Essential", body: "Ensure quality and efficiency in software development.", authorFirstName: "Daniel", authorLastName: "Turner" },
+  { id: 27, title: "How to Get Started with Kubernetes", body: "Deploying containerized applications the easy way.", authorFirstName: "Lily", authorLastName: "Bell" },
+  { id: 28, title: "Understanding OAuth 2.0", body: "How authentication and authorization work in APIs.", authorFirstName: "Oliver", authorLastName: "Reed" },
+  // Add more posts following the same pattern until you reach 50
+];
+
+export default posts;
