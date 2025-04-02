@@ -15,37 +15,39 @@ An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recha
 Clone this repository:
 
 ```bash
-git clone https://github.com/Fawkes73/dash-appgit
+git clone https://github.com/Fawkes73/dash-app.git
 cd data-dashboard-app
+```
+
 Install dependencies:
 
-bash
+```bash
 npm install
+```
+
 Start development server:
 
-bash
+```bash
 npm run dev
-📂 Project Structure
+```
 
-🖥 Usage
-Layout.tsx ensures Progress Bar appears on every page
+## 📂 Project Structure
 
-DashboardCard.tsx includes users, posts, comments, and a Bar Chart
+- `Layout.tsx` - Ensures Progress Bar appears on every page
+- `DashboardCard.tsx` - Includes users, posts, comments, and a Bar Chart
+- `pages/` - Contains routes for dashboard & homepage
 
-Pages directory contains routes for dashboard & homepage
+## 🚀 Technologies Used
 
-🚀 Technologies Used
-Next.js (React Framework)
+- **Next.js** - React Framework
+- **ShadCN UI** - Stylized UI components
+- **Recharts** - Interactive charting
+- **Tailwind CSS** - Responsive styling
 
-ShadCN UI (Stylized UI components)
+## 🤝 Contributing
 
-Recharts (Interactive charting)
-
-Tailwind CSS (Responsive styling)
-
-🤝 Contributing
 Feel free to fork this repository, submit issues, or send pull requests! 🎯
 
-📜 License
+## 📜 License
+
 This project is licensed under the MIT License.
-```
