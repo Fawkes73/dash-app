@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Data Dashboard App 🚀
 
-## Getting Started
+An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recharts**, featuring authentication, pagination, and dynamic charts.
 
-First, run the development server:
+## 🌟 Features
+
+- **Authentication** with JWT tokens
+- **User, Posts & Comments Table** with pagination
+- **Progress Bar** globally implemented in layout
+- **Dynamic Bar Chart** powered by Recharts
+- **Dark mode support** using Next.js Themes
+
+## 🛠 Installation & Setup
+
+Clone this repository:
 
 ```bash
+git clone https://github.com/Fawkes73/dash-appgit
+cd data-dashboard-app
+Install dependencies:
+
+bash
+npm install
+Start development server:
+
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+📂 Project Structure
+plaintext
+📦 data-dashboard-app
+├── 📂 components
+│   ├── 📜 Posts.tsx
+│   ├── 📜 Users.tsx
+│   ├── 📜 ProgressDemo.tsx
+│   ├── 📜 DashboardCard.tsx
+│   ├── 📜 Layout.tsx
+├── 📂 pages
+│   ├── 📜 index.tsx
+│   ├── 📜 dashboard.tsx
+├── 📂 styles
+│   ├── 📜 globals.css
+└── 📜 README.md
+🖥 Usage
+Layout.tsx ensures Progress Bar appears on every page
+
+DashboardCard.tsx includes users, posts, comments, and a Bar Chart
+
+Pages directory contains routes for dashboard & homepage
+
+🚀 Technologies Used
+Next.js (React Framework)
+
+ShadCN UI (Stylized UI components)
+
+Recharts (Interactive charting)
+
+Tailwind CSS (Responsive styling)
+
+🤝 Contributing
+Feel free to fork this repository, submit issues, or send pull requests! 🎯
+
+📜 License
+This project is licensed under the MIT License.
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
