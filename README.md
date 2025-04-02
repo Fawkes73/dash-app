@@ -26,20 +26,7 @@ Start development server:
 bash
 npm run dev
 📂 Project Structure
-plaintext
-📦 data-dashboard-app
-├── 📂 components
-│   ├── 📜 Posts.tsx
-│   ├── 📜 Users.tsx
-│   ├── 📜 ProgressDemo.tsx
-│   ├── 📜 DashboardCard.tsx
-│   ├── 📜 Layout.tsx
-├── 📂 pages
-│   ├── 📜 index.tsx
-│   ├── 📜 dashboard.tsx
-├── 📂 styles
-│   ├── 📜 globals.css
-└── 📜 README.md
+
 🖥 Usage
 Layout.tsx ensures Progress Bar appears on every page
 
