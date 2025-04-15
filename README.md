@@ -1,7 +1,16 @@
 # Data Dashboard App 🚀
 
 An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recharts**, featuring authentication, pagination, and dynamic charts.
-![screenshot](./public/preview-image.png)
+
+
+
+## Light Mode
+![screenshot](./public/preview-image1.png)
+
+
+
+## Dark Mode
+![screenshot](./public/preview-image2.png)
 
 ## 🌟 Features
 
