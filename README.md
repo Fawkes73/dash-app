@@ -1,6 +1,7 @@
 # Data Dashboard App 🚀
 
 An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recharts**, featuring authentication, pagination, and dynamic charts.
+![screenshot](./public/preview-image.png)
 
 ## 🌟 Features
 
@@ -48,6 +49,11 @@ npm run dev
 
 Feel free to fork this repository, submit issues, or send pull requests! 🎯
 
-## 📜 License
+📸 UI Preview
+Include screenshots or a short GIF here
 
-This project is licensed under the MIT License.
+📄 License
+This project is open source under the MIT License.
+
+🙋‍♂️ Author
+Built with ❤️ by Mandar Surve
