@@ -3,7 +3,7 @@
 An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recharts**, featuring authentication, pagination, and dynamic charts.
 
 
-🙋‍♂️ Author
+## 🙋‍♂️ Author
 Built with ❤️ by Mandar Surve
 
 ## Light Mode
