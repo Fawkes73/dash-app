@@ -4,7 +4,7 @@ An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recha
 
 
 ## 🙋‍♂️ Author
-Built with ❤️ by Mandar Surve
+Built with 👨‍💻 by Mandar Surve
 
 ## Light Mode
 ![screenshot](./public/preview-image1.png)
