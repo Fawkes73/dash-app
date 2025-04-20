@@ -3,6 +3,8 @@
 An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recharts**, featuring authentication, pagination, and dynamic charts.
 
 
+🙋‍♂️ Author
+Built with ❤️ by Mandar Surve
 
 ## Light Mode
 ![screenshot](./public/preview-image1.png)
@@ -64,5 +66,14 @@ Include screenshots or a short GIF here
 📄 License
 This project is open source under the MIT License.
 
-🙋‍♂️ Author
-Built with ❤️ by Mandar Surve
+
+
+If you liked this project, give it a ⭐ and share it!
+
+Let me know if you'd like:
+- Deploy instructions via **Netlify/Vercel**
+- API documentation section
+- Better screenshots & badge support
+
+Happy Coding 💻🚀
+
