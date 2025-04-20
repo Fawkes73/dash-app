@@ -71,8 +71,8 @@ This project is open source under the MIT License.
 If you liked this project, give it a ⭐ and share it!
 
 Let me know if you'd like:
+
 - Deploy instructions via **Netlify/Vercel**
-- API documentation section
 - Better screenshots & badge support
 
 Happy Coding 💻🚀
