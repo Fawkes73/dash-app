@@ -3,17 +3,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Play, Circle, Goal, Repeat, Square } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Play, Circle, Eye, Goal, Repeat, Square } from "lucide-react";
+import { cn, formatIndianNumber } from "@/lib/utils";
 
 // Set a real YouTube video ID here to go live — until then the panel
 // shows a broadcast-style placeholder instead of an embed pointing at
 // unrelated content.
 const LIVE_STREAM_VIDEO_ID = "";
 
-const match = {
+const stream = {
+  title: "MATCHDAY LIVE: Arsenal vs Chelsea",
   competition: "Premier League · Matchday 24",
   venue: "Emirates Stadium",
+  watching: 1_000_000,
+};
+
+const match = {
   minute: 67,
   home: { name: "Arsenal", short: "ARS", score: 2 },
   away: { name: "Chelsea", short: "CHE", score: 1 },
@@ -49,40 +54,40 @@ function TeamCrest({ short, className }: { short: string; className?: string }) 
   );
 }
 
-export default function LiveMatch() {
+export default function LiveStream() {
   return (
     <div className="space-y-4">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-bold tracking-tight text-foreground">Live Match</h2>
-          <p className="text-sm text-muted-foreground">{match.competition}</p>
+          <h2 className="text-2xl font-bold tracking-tight text-foreground">Live Stream</h2>
+          <p className="text-sm text-muted-foreground">{stream.title}</p>
         </div>
         <Badge className="gap-1.5 bg-accent text-accent-foreground">
           <Circle className="size-2 animate-pulse fill-current" />
-          LIVE · {match.minute}&apos;
+          LIVE
         </Badge>
       </div>
 
       <Card className="overflow-hidden border-border/60 py-0">
-        <div className="relative aspect-video w-full bg-sidebar">
+        <div className="relative aspect-video w-full bg-player">
           {LIVE_STREAM_VIDEO_ID ? (
             <iframe
               className="absolute inset-0 size-full"
               src={`https://www.youtube.com/embed/${LIVE_STREAM_VIDEO_ID}?autoplay=0`}
-              title="Live match stream"
+              title="Live stream"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           ) : (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-sidebar via-sidebar to-sidebar-accent text-sidebar-foreground">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-player via-player to-player-accent text-player-foreground">
               <button
                 type="button"
                 aria-label="Play live stream"
-                className="flex size-14 items-center justify-center rounded-full bg-sidebar-foreground/15 backdrop-blur transition-colors hover:bg-sidebar-foreground/25"
+                className="flex size-14 items-center justify-center rounded-full bg-player-foreground/15 backdrop-blur transition-colors hover:bg-player-foreground/25"
               >
                 <Play className="size-6 fill-current" />
               </button>
-              <p className="text-xs font-medium text-sidebar-foreground/70">
+              <p className="text-xs font-medium text-player-foreground/70">
                 Connect a YouTube live stream ID to go live here
               </p>
             </div>
@@ -91,25 +96,32 @@ export default function LiveMatch() {
             <Circle className="size-2 animate-pulse fill-red-500 text-red-500" />
             LIVE
           </div>
+          <div className="absolute right-3 top-3 flex items-center gap-1.5 rounded-full bg-black/60 px-2.5 py-1 text-xs font-semibold text-white">
+            <Eye className="size-3" />
+            {formatIndianNumber(stream.watching)} watching
+          </div>
         </div>
 
-        <CardContent className="flex items-center justify-center gap-6 py-6">
-          <div className="flex flex-col items-center gap-2">
-            <TeamCrest short={match.home.short} className="bg-sidebar text-sidebar-foreground" />
-            <span className="text-sm font-semibold text-foreground">{match.home.name}</span>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold tabular-nums tracking-tight text-foreground">
-              {match.home.score}&ndash;{match.away.score}
+        <CardContent className="space-y-4 py-6">
+          <div className="flex items-center justify-center gap-6">
+            <div className="flex flex-col items-center gap-2">
+              <TeamCrest short={match.home.short} className="bg-player text-player-foreground" />
+              <span className="text-sm font-semibold text-foreground">{match.home.name}</span>
             </div>
-            <div className="mt-1 text-xs font-medium tabular-nums text-muted-foreground">
-              {match.minute}&apos; · {match.venue}
+            <div className="text-center">
+              <div className="text-4xl font-bold tabular-nums tracking-tight text-foreground">
+                {match.home.score}&ndash;{match.away.score}
+              </div>
+              <div className="mt-1 text-xs font-medium tabular-nums text-muted-foreground">
+                {match.minute}&apos; · {stream.venue}
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <TeamCrest short={match.away.short} className="bg-muted text-foreground" />
+              <span className="text-sm font-semibold text-foreground">{match.away.name}</span>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-2">
-            <TeamCrest short={match.away.short} className="bg-muted text-foreground" />
-            <span className="text-sm font-semibold text-foreground">{match.away.name}</span>
-          </div>
+          <p className="text-center text-xs text-muted-foreground">{stream.competition}</p>
         </CardContent>
       </Card>
 
@@ -143,7 +155,7 @@ export default function LiveMatch() {
 
         <Card className="border-border/60">
           <CardHeader>
-            <CardTitle className="text-base">Match Events</CardTitle>
+            <CardTitle className="text-base">Stream Events</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             {events

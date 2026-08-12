@@ -86,8 +86,8 @@ const Videos: React.FC = () => {
         {currentVideos.length > 0 ? (
           currentVideos.map((video) => (
             <Card key={video.id} className="overflow-hidden border-border/60 py-0">
-              <div className="relative flex aspect-video items-center justify-center bg-sidebar">
-                <Play className="size-8 text-sidebar-foreground/60" />
+              <div className="relative flex aspect-video items-center justify-center bg-player">
+                <Play className="size-8 text-player-foreground/60" />
                 <span className="absolute bottom-1.5 right-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-medium text-white">
                   {video.duration}
                 </span>

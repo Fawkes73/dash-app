@@ -1,6 +1,6 @@
 # Data Dashboard App 🚀
 
-An interactive **data dashboard** built with **Next.js, ShadCN UI**, and **Recharts**, featuring authentication, pagination, and dynamic charts.
+A **YouTube channel dashboard** for a football live-stream channel, built with **Next.js, ShadCN UI**, and **Recharts** — channel analytics, a live match stream, a video library, and viewer comments.
 
 
 ## 🙋‍♂️ Author
@@ -14,13 +14,16 @@ Built with 👨‍💻 by Mandar Surve
 ## Dark Mode
 ![screenshot](./public/preview-image2.png)
 
+## Live Stream
+![screenshot](./public/preview-image3-livestream.png)
+
 ## 🌟 Features
 
-- **Authentication** with JWT tokens
-- **User, Posts & Comments Table** with pagination
-- **Progress Bar** globally implemented in layout
-- **Dynamic Bar Chart** powered by Recharts
-- **Dark mode support** using Next.js Themes
+- **Channel Overview** — subscribers, total views, live viewer count, watch time, and a views-by-category chart derived from the actual video data
+- **Live Stream** — YouTube embed slot with a broadcast-style placeholder, live score, match stats, and an event feed
+- **Videos & Comments** — a channel video library with pagination and YouTube-style viewer comments
+- **User table** with a scrollable list
+- **Full light/dark theme** — the whole site switches, including the header and sidebar
 
 ## 🛠 Installation & Setup
 
@@ -28,7 +31,7 @@ Clone this repository:
 
 ```bash
 git clone https://github.com/Fawkes73/dash-app.git
-cd data-dashboard-app
+cd dash-app
 ```
 
 Install dependencies:
@@ -45,9 +48,10 @@ npm run dev
 
 ## 📂 Project Structure
 
-- `Layout.tsx` - Ensures Progress Bar appears on every page
-- `DashboardCard.tsx` - Includes users, posts, comments, and a Bar Chart
-- `pages/` - Contains routes for dashboard & homepage
+- `src/app/Components/Dashboardcard` - Channel Overview: stats + views-by-category chart
+- `src/app/Components/LiveStream` - Live stream panel: score, stats, event feed
+- `src/app/Components/Videos` / `Comments` - Video library and viewer comments
+- `src/app/pages/dashboard` - Dashboard shell: header + sidebar + active section
 
 ## 🚀 Technologies Used
 

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Eye, Radio, Clock, ArrowUpRight } from "lucide-react";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { formatIndianNumber } from "@/lib/utils";
 
 interface VideoType {
   id: number;
@@ -14,7 +15,13 @@ interface VideoType {
 
 const channelStats = [
   { key: "subscribers", label: "Subscribers", value: "284.6K", change: "+2.1% this week", icon: Users },
-  { key: "liveViewers", label: "Live Viewers Now", value: "8,240", change: "Matchday 24 stream", icon: Radio },
+  {
+    key: "liveViewers",
+    label: "Live Viewers Now",
+    value: formatIndianNumber(1_000_000),
+    change: "Matchday 24 stream",
+    icon: Radio,
+  },
   { key: "watchTime", label: "Watch Time (30d)", value: "2,180 hrs", change: "+12% vs last month", icon: Clock },
 ] as const;
 

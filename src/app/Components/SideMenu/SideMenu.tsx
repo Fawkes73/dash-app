@@ -14,7 +14,7 @@ import {
   SidebarFooter,
 } from "@/components/ui/sidebar";
 import Dashboard from "@/app/Components/Dashboardcard";
-import LiveMatch from "@/app/Components/LiveMatch/LiveMatch";
+import LiveStream from "@/app/Components/LiveStream/LiveStream";
 import Profile from "@/app/Components/Profile/Profile";
 import UserComponent from "@/app/Components/User/User";
 import Videos from "@/app/Components/Videos/Videos";
@@ -25,7 +25,7 @@ import { useTheme } from "next-themes";
 // Sidebar items
 const items = [
   { title: "Dashboard", component: <Dashboard />, icon: Home },
-  { title: "Live Match", component: <LiveMatch />, icon: Radio },
+  { title: "Live Stream", component: <LiveStream />, icon: Radio },
   { title: "Profile", component: <Profile />, icon: User },
   { title: "Users", component: <UserComponent />, icon: User },
   { title: "Search", component: <div>Search Component</div>, icon: Search },
