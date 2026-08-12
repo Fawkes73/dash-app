@@ -1,5 +1,5 @@
+import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Progress } from "@/components/ui/progress"; // ✅ Import Progress Bar
 
 export const metadata = {
   title: "Data Dashboard App",
@@ -12,14 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system">
-          {/* ✅ Global Progress Bar - Appears on Every Page */}
-          <div className="p-4">
-            <Progress />
-          </div>
-
           {children}
         </ThemeProvider>
       </body>
